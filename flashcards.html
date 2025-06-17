@@ -1,0 +1,21 @@
+---
+layout: single
+title: Punjabi Flashcards
+permalink: /flashcards/
+---
+
+<div class="flashcard">
+  <div id="card-word" class="word"></div>
+  <div id="card-answer" class="answer" style="display:none;"></div>
+  <div class="buttons">
+    <button id="show-answer">Show Answer</button>
+    <button id="known-btn">Known</button>
+    <button id="unknown-btn">Unknown</button>
+  </div>
+</div>
+
+<script>
+  const FLASHCARD_DATA_URL = "{{ '/assets/data/punjabi_words.json' | relative_url }}";
+</script>
+<script src="{{ '/assets/js/flashcards.js' | relative_url }}"></script>
+
